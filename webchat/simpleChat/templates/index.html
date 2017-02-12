@@ -1,0 +1,121 @@
+<!doctype html>
+
+<html lang="en">
+{% load static %}
+<head>
+	<meta charset="utf-8">
+
+	<title>Web Chat</title>
+	<meta name="Web chat">
+
+	<link rel="stylesheet" href="{% static 'styles/index.css' %}">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="center-div">
+			<div class="logo-box">
+				<img alt="niki.ai logo" class="logo" role="logo" src="{% static 'images/logo_white.svg' %}" type="image/svg+xml">
+			</div>
+			<div class="logo-text">niki.ai</div>
+			<div class="heading-text">Chat with Niki</div>
+		</div>
+		<div class="overlay"></div>
+		<div class="chat-wrapper">
+			<div class="chat-window">
+				<div class="chat-menu">
+					<div class="chat-menu-option private-chat active">Private Chat</div>
+					<div class="chat-menu-option group-chat">Group Chat</div>
+				</div>
+				<div class="contact-list">
+					<div class="contact-item">
+						<img class="contact-img" src="{% static 'images/person_icon.svg' %}" type="image/svg+xml">
+						<div class="contact-name">Contact 1</div>
+						<div class="clear"></div>
+					</div>
+					<div class="contact-item">
+						<img class="contact-img" src="{% static 'images/person_icon.svg' %}" type="image/svg+xml">
+						<div class="contact-name">Contact 2</div>
+						<div class="clear"></div>
+					</div>
+					<div class="contact-item">
+						<img class="contact-img" src="{% static 'images/person_icon.svg' %}" type="image/svg+xml">
+						<div class="contact-name">Contact 3</div>
+						<div class="clear"></div>
+					</div>
+					<div class="contact-item">
+						<img class="contact-img" src="{% static 'images/person_icon.svg' %}" type="image/svg+xml">
+						<div class="contact-name">Contact 4</div>
+						<div class="clear"></div>
+					</div>
+					<div class="contact-item">
+						<img class="contact-img" src="{% static 'images/person_icon.svg' %}" type="image/svg+xml">
+						<div class="contact-name">Contact 5</div>
+						<div class="clear"></div>
+					</div>
+					<div class="contact-item">
+						<img class="contact-img" src="{% static 'images/person_icon.svg' %}" type="image/svg+xml">
+						<div class="contact-name">Contact 6</div>
+						<div class="clear"></div>
+					</div>
+					<div class="contact-item">
+						<img class="contact-img" src="{% static 'images/person_icon.svg' %}" type="image/svg+xml">
+						<div class="contact-name">Contact 7</div>
+						<div class="clear"></div>
+					</div>
+					<div class="contact-item">
+						<img class="contact-img" src="{% static 'images/person_icon.svg' %}" type="image/svg+xml">
+						<div class="contact-name">Contact 8</div>
+						<div class="clear"></div>
+					</div>
+				</div>
+				<div class="chat-box">
+					<div class="message-box">
+						<div class="chat-bubble chat-client sent-msg pull-right">Book me the cheapest cab</div>
+						<div class='clear'></div>
+						<div class="chat-bubble chat-client received-msg pull-left">Let me book you a cabLet me book you a cabLet me book you a cabLet me book you a cabLet me book you a cabLet me book you a cab</div>
+						<div class='clear'></div>
+						<div class="chat-bubble chat-client received-msg pull-left">I have picked up your location</div>
+						<div class='clear'></div>
+						<div class="chat-bubble chat-client sent-msg pull-right">Book me the cheapest cab</div>
+						<div class='clear'></div>
+						<div class="chat-bubble chat-client received-msg pull-left">Let me book you a cab</div>
+						<div class='clear'></div>
+						<div class="chat-bubble chat-client received-msg pull-left">I have picked up your location</div>
+						<div class='clear'></div>
+						<div class="chat-bubble chat-client sent-msg pull-right">Book me the cheapest cab</div>
+						<div class='clear'></div>
+						<div class="chat-bubble chat-client received-msg pull-left">Let me book you a cab</div>
+						<div class='clear'></div>
+						<div class="chat-bubble chat-client received-msg pull-left">I have picked up your location</div>
+						<div class='clear'></div>
+					</div>
+					<div class="chat-text-box">
+						<div class="message-input-wrapper">
+							<input type="text" name="message" class="message" size="25">
+						</div>
+						<div class="send-box">
+							<img class="send-sign" src="{% static 'images/plane_icon.svg' %}" type="image/svg+xml">
+						</div>
+					</div>
+					<div class="clear"></div>
+			    </div>
+			</div>
+		</div>
+
+		<div class="chat-control-wrapper">
+			<div class="chat-control">
+				<img class="chat-sign open-chat" src="{% static 'images/plus_icon.svg' %}" type="image/svg+xml">
+				<img class="chat-sign close-chat" src="{% static 'images/minus_icon.svg' %}" type="image/svg+xml">
+			</div>
+		</div>
+
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js" type="text/javascript"></script>
+	<script src="{% static 'js/index.js' %}"></script>
+</body>
+</html>

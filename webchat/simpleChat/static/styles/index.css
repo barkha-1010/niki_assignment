@@ -1,0 +1,237 @@
+body {
+	padding: 0px;
+	margin: 0px;
+}
+
+.wrapper {
+	background-color: #E2E2E2;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	overflow: hidden;
+}
+
+.center-div {
+	top: 30%;
+	left: 40%;
+	position: fixed;
+	width: 20%;
+	height: auto;
+	text-align: -webkit-center;
+}
+
+.logo-box {
+	padding: 1.2em 1.5em;
+	margin: 1.2em 0 .1em;
+	border-radius: 2em;
+	width: 50%;
+	background-color: #0096FF;
+}
+
+.logo-text {
+	color: #0096FF;
+	font-size: 2.2em;
+}
+
+.heading-text {
+	font-size: 3em;
+}
+
+.chat-wrapper {
+	position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px 10px 0 0;
+    display: none;
+    z-index: 100;
+}
+
+.chat-control-wrapper {
+	bottom: 0;
+	right: 0;
+	position: absolute;
+	padding: 0px 3% 3% 0px;
+	z-index: 100;
+}
+
+.chat-control {
+	padding: 1em 1em;
+	border-radius: 50%;
+	width: 60px;
+	background-color: #0096FF;
+	float: right;
+}
+
+.chat-sign {
+	width: 100%;
+	display: none;
+	cursor: pointer;
+}
+
+.chat-window{
+	width: 300px;
+    height: 400px;
+    background: #FFFFFF;
+    padding: 2px;
+    border-radius: 0.3em;
+}
+
+.chat-menu {
+	height: 60px;
+}
+
+.chat-menu-option {
+	float: left;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 15px;
+    border-style: solid;
+    border-width: thin;
+    border-color: #E2E2E2;
+}
+
+.chat-menu-option.active {
+	background-color: #E2E2E2;
+	cursor: default;
+}
+
+.contact-list {
+	font-size: .8em;
+	height: 340px;
+	display: block;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+.contact-list::-webkit-scrollbar {
+    width: 5px;
+}
+ 
+.contact-list::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 4px;
+}
+ 
+.contact-list::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+
+.contact-item {
+	padding: 0.8em 0.8em;
+    margin: 0.5em 0 .1em;
+    border-radius: 1em;
+    height: 60px;
+    border-style: solid;
+    border-color: #E2E2E2;
+    border-width: thin;
+    cursor: pointer;
+}
+
+.contact-img {
+	width: 40px;
+    float: left;
+}
+
+.contact-name {
+	font-size: 2em;
+    float: left;
+    margin-left: 14px;
+    padding-top: 5px;
+}
+
+.chat-box {
+	font-size: .8em;
+	height: 340px;
+	display: none;
+}
+
+.message-box {
+	height: 285px;
+	display: block;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	padding-bottom: 10px;
+}
+
+.message-box::-webkit-scrollbar {
+    width: 5px;
+}
+ 
+.message-box::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 4px;
+}
+ 
+.message-box::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+
+.chat-bubble {
+	padding: 1.2em 1.5em;
+	margin: 0.5em 0 .1em;
+	border-radius: 2em;
+	max-width: 225px;
+	display: block;
+	background-color: #0096FF;
+    color: #FFFFFF;
+}
+
+.sent-msg {
+	border-bottom-right-radius: 0em;
+}
+
+.recieved-msg {
+	border-bottom-left-radius: 0em;
+}
+
+.chat-text-box {
+	height: 40px;
+	padding: 10px;
+	width: 400px;
+}
+
+.message-input-wrapper {
+	float: left;
+}
+
+input[type="text"] {
+	padding: 5px;
+    border: solid 1px #fff;
+    box-shadow: inset 1px 1px 2px 0 #707070;
+    transition: box-shadow 0.3s;
+    font-size: 15px;
+}
+
+input[type="text"]:focus {
+  box-shadow: inset 1px 1px 2px 0 #c9c9c9;
+}
+
+.send-box {
+	display: inline-block;
+    margin-left: 8px;
+    float: left;
+}
+
+.send-sign {
+	width: 33px;
+	cursor: pointer;
+}
+.clear {
+	clear: both;
+}
+
+.overlay {
+	position:fixed;
+	top:0;
+	left:0;
+	background: #000000;
+	z-index:5;
+	width:100%;
+	height:100%;
+	opacity: 0.7;
+	display:none;
+}
